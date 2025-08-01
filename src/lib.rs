@@ -18,7 +18,10 @@ pub mod prelude {
 }
 
 pub use error::Error;
-pub use kcp::{DEFAULT_KCP_OVERHEAD, MAX_KCP_OVERHEAD, Kcp, get_conv, get_token, compute_hash};
+pub use kcp::{Kcp, get_conv, get_token};
+
+#[cfg(feature = "byte-check")]
+pub use kcp::{DEFAULT_KCP_OVERHEAD, MAX_KCP_OVERHEAD, compute_hash};
 
 /// KCP result
 pub type KcpResult<T> = Result<T, Error>;
