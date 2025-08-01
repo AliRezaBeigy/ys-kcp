@@ -1,11 +1,12 @@
 [package]
 name = "ys-kcp"
 version = "1.2.0"
-authors = ["Matrix <113445886@qq.com>", "Y. T. Chung <zonyitoo@gmail.com>"]
+authors = ["Matrix <113445886@qq.com>", "Y. T. Chung <zonyitoo@gmail.com>", "KingRainbow44"]
 description = "Reliable-UDP Library for Rust"
 license = "MIT"
 readme = "README.md"
 keywords = ["kcp", "udp", "reliable"]
+repository = "https://github.com/ys4e/ys-kcp"
 edition = "2018"
 
 [lib]
